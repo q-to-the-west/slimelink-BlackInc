@@ -1,6 +1,6 @@
 # SlimeLink
 
-
+Connect devices with nDoF sensors to SlimeVR.
 
 ## Getting started
 
