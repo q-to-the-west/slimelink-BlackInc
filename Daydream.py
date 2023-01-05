@@ -51,7 +51,7 @@ handshake_packet = {
     "mcu_type": ("int:32", 0),
     "imu_info": ("3*int:32", 0, 0, 0),
     "firmware_build": ("int:32", 8),
-    # "firmware_name_length": len(application_name),
+    "firmware_name_length": len(application_name),
     "firmware_name": application_name.encode(),
     "mac": hex(uuid.getnode())
 }
