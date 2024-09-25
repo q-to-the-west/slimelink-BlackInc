@@ -534,6 +534,7 @@ async def connect_to_device(dreamer, device: BLEDevice, sensor_id: int, protocol
                             # notification for it doesn't seem to update often.
                             # battery_data = await client.read_gatt_char(battery_characteristic)
                             # report_battery_data(dreamer, sensor_id, battery_data, transport)
+                            await asyncio.sleep(0.2)
                         await client.unpair()
                     else:
                         print(f"Failed to connect to {device.name}")
